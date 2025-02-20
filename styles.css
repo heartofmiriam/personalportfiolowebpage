@@ -1,0 +1,62 @@
+/* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Base styles for the whole page */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styles for the welcome section */
+        #welcome-section {
+            height: 100vh; /* Equal to the height of the viewport */
+            background-image:url(https://wallpapercave.com/wp/wp4978498.jpg);
+            color: #fff;
+            text-align: center;
+            padding: 100px;
+        }
+
+        /* Styles for the projects section */
+        #projects {
+            padding: 50px;
+        }
+
+        .project-tile {
+            background-color:#B4B8D2;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* Styles for the navigation bar */
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color:#8CEDB9;
+            color:#FEF0C9;
+            padding: 10px 0;
+        }
+
+        #navbar a {
+            color:#FEF0C9;
+            text-decoration: none;
+            margin: 0 10px;
+            background-color:#8CEDB9;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            #navbar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #navbar a {
+                margin: 10px 0;
+            }
+        }
